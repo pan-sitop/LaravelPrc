@@ -1,9 +1,9 @@
 <?php
+use App\Http\Controllers\EquipoController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EmpleadoController;
 
 Route::get('/', function () {
-    return redirect()->route('empleados.index');
+    return redirect()->route('equipos.index');
 });
 
-Route::resource('empleados', EmpleadoController::class);
+Route::resource('equipos', EquipoController::class);
